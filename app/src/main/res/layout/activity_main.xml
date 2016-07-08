@@ -9,8 +9,203 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="jubeapps.calcit.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="DEL"
+        android:id="@+id/deleteBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="("
+        android:id="@+id/openBrackBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_alignBottom="@+id/deleteBut"
+        android:layout_toEndOf="@+id/deleteBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=")"
+        android:id="@+id/closeBrackBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_alignBottom="@+id/openBrackBut"
+        android:layout_toEndOf="@+id/openBrackBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/addBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_alignBottom="@+id/closeBrackBut"
+        android:layout_toEndOf="@+id/closeBrackBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/sevenBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_below="@+id/openBrackBut"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/fourBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_below="@+id/sevenBut"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/oneBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_below="@+id/fourBut"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/eightBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/openBrackBut"
+        android:layout_toStartOf="@+id/closeBrackBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/fiveBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/sevenBut"
+        android:layout_toEndOf="@+id/sevenBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/twoBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_alignTop="@+id/oneBut"
+        android:layout_toEndOf="@+id/oneBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:id="@+id/nineBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/openBrackBut"
+        android:layout_toStartOf="@+id/addBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/sixBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/eightBut"
+        android:layout_alignEnd="@+id/nineBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/threeBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/fiveBut"
+        android:layout_alignEnd="@+id/sixBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:id="@+id/dotBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/oneBut"
+        android:layout_toStartOf="@+id/twoBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/zeroBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_alignBottom="@+id/dotBut"
+        android:layout_toStartOf="@+id/threeBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:id="@+id/equalBut"
+        android:height="30dp"
+        android:width="25dp"
+        android:layout_below="@+id/twoBut"
+        android:layout_alignEnd="@+id/threeBut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minusBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_above="@+id/sixBut"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/timesBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_below="@+id/nineBut"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/divideBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_alignTop="@+id/threeBut"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+/-"
+        android:id="@+id/plusMinusBut"
+        android:height="25dp"
+        android:width="25dp"
+        android:layout_below="@+id/threeBut"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
